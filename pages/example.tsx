@@ -13,7 +13,7 @@ export default function Page(props: Props) {
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const user = await prisma.user.findFirst({
     where: {
-      email: 'test@test.com'
+      email: 'reza@test.com'
     }
   })
 
